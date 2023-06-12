@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const posts = [
   {
     id: 1,
@@ -93,10 +95,12 @@ export default function BlogReco() {
                 </p>
               </div>
               <div className="relative mt-8 flex items-center gap-x-4">
-                <img
+                <Image
                   src={post.author.imageUrl}
                   alt=""
                   className="h-10 w-10 rounded-full bg-gray-50"
+                  width={100}
+                  height={100}
                 />
                 <div className="text-sm leading-6">
                   <p className="font-semibold text-gray-900">
