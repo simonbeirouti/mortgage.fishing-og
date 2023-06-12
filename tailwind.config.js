@@ -6,4 +6,18 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [require("@tailwindcss/forms")],
+  theme: {
+    colors: {
+      white: "#ffffff",
+      platinum: "#E2E2E2",
+      timber: "#D8D4D5",
+      sage: {
+        100: "#9DC669",
+        400: "#8FB45F",
+        700: "#80A256",
+      },
+      gray: "#6E7271",
+      black: "#1A2321",
+    },
+  },
 };
