@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const featuredPost = {
   id: 1,
   title: "We’re incredibly proud to announce we have secured $75m in Series B",
@@ -49,12 +51,12 @@ const posts = [
 
 export default function BlogList() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white pb-24 sm:pb-32">
       <div className="mx-auto max-w-2xl text-center mb-20">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
           From the blog
         </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
+        <p className="mt-2 text-lg leading-8 text-black">
           Learn how to grow your business with our expert advice.
         </p>
       </div>
@@ -62,74 +64,78 @@ export default function BlogList() {
         <article className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg">
           <time
             dateTime={featuredPost.datetime}
-            className="block text-sm leading-6 text-gray-600"
+            className="block text-sm leading-6 text-gray"
           >
             {featuredPost.date}
           </time>
           <h2
             id="featured-post"
-            className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            className="mt-4 text-3xl font-bold tracking-tight text-black sm:text-4xl"
           >
             {featuredPost.title}
           </h2>
-          <p className="mt-4 text-lg leading-8 text-gray-600">
+          <p className="mt-4 text-lg leading-8 text-gray">
             {featuredPost.description}
           </p>
           <div className="mt-4 flex flex-col justify-between gap-6 sm:mt-8 sm:flex-row-reverse sm:gap-8 lg:mt-4 lg:flex-col">
             <div className="flex">
               <a
                 href={featuredPost.href}
-                className="text-sm font-semibold leading-6 text-indigo-600"
+                className="text-sm font-semibold leading-6 text-sage"
                 aria-describedby="featured-post"
               >
                 Continue reading <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
-            <div className="flex lg:border-t lg:border-gray-900/10 lg:pt-8">
+            <div className="flex lg:border-t lg:border-timber lg:pt-8">
               <a
                 href={featuredPost.author.href}
-                className="flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900"
+                className="flex gap-x-2.5 text-sm font-semibold leading-6 text-gray"
               >
-                <img
+                <Image
                   src={featuredPost.author.imageUrl}
                   alt=""
-                  className="h-6 w-6 flex-none rounded-full bg-gray-50"
+                  className="h-6 w-6 flex-none rounded-full"
+                  width={100}
+                  height={100}
                 />
                 {featuredPost.author.name}
               </a>
             </div>
           </div>
         </article>
-        <div className="mx-auto w-full max-w-2xl border-t border-gray-900/10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
-          <div className="-my-12 divide-y divide-gray-900/10">
+        <div className="mx-auto w-full max-w-2xl border-t border-gray pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
+          <div className="-my-12 divide-y divide-timber">
             {posts.map((post) => (
               <article key={post.id} className="py-12">
                 <div className="group relative max-w-xl">
                   <time
                     dateTime={post.datetime}
-                    className="block text-sm leading-6 text-gray-600"
+                    className="block text-sm leading-6 text-black"
                   >
                     {post.date}
                   </time>
-                  <h2 className="mt-2 text-lg font-semibold text-gray-900 group-hover:text-gray-600">
+                  <h2 className="mt-2 text-lg font-semibold text-black group-hover:text-gray">
                     <a href={post.href}>
                       <span className="absolute inset-0" />
                       {post.title}
                     </a>
                   </h2>
-                  <p className="mt-4 text-sm leading-6 text-gray-600">
+                  <p className="mt-4 text-sm leading-6 text-black">
                     {post.description}
                   </p>
                 </div>
                 <div className="mt-4 flex">
                   <a
                     href={post.author.href}
-                    className="relative flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900"
+                    className="relative flex gap-x-2.5 text-sm font-semibold leading-6 text-gray"
                   >
-                    <img
+                    <Image
                       src={post.author.imageUrl}
                       alt=""
-                      className="h-6 w-6 flex-none rounded-full bg-gray-50"
+                      className="h-6 w-6 flex-none rounded-full"
+                      width={100}
+                      height={100}
                     />
                     {post.author.name}
                   </a>
