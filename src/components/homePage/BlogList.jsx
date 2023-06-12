@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const featuredPost = {
   id: 1,
-  title: "We’re incredibly proud to announce we have secured $75m in Series B",
-  href: "#",
+  title: "We are incredibly proud to announce we have secured $75m in Series B",
+  href: "secured-75m-in-series-b",
   description:
     "Libero neque aenean tincidunt nec consequat tempor. Viverra odio id velit adipiscing id. Nisi vestibulum orci eget bibendum dictum. Velit viverra posuere vulputate volutpat nunc. Nunc netus sit faucibus.",
   date: "Mar 16, 2020",
@@ -20,7 +21,7 @@ const posts = [
   {
     id: 2,
     title: "Boost your conversion rate",
-    href: "#",
+    href: "boost-your-conversion-rate",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
     date: "Mar 10, 2020",
@@ -35,7 +36,7 @@ const posts = [
   {
     id: 3,
     title: "Boost your conversion rate",
-    href: "#",
+    href: "boost-your-conversion-rate-again",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
     date: "Mar 10, 2020",
@@ -51,7 +52,7 @@ const posts = [
 
 export default function BlogList() {
   return (
-    <div className="bg-white pb-24 sm:pb-32">
+    <div className="bg-white pb-12 sm:pb-16">
       <div className="mx-auto max-w-2xl text-center mb-20">
         <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
           From the blog
@@ -60,7 +61,7 @@ export default function BlogList() {
           Learn how to grow your business with our expert advice.
         </p>
       </div>
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12 px-6 sm:gap-y-16 lg:grid-cols-2 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-6 px-6 sm:gap-y-16 lg:grid-cols-2 lg:px-8">
         <article className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg">
           <time
             dateTime={featuredPost.datetime}
@@ -80,7 +81,7 @@ export default function BlogList() {
           <div className="mt-4 flex flex-col justify-between gap-6 sm:mt-8 sm:flex-row-reverse sm:gap-8 lg:mt-4 lg:flex-col">
             <div className="flex">
               <a
-                href={featuredPost.href}
+                href={`blog/${featuredPost.href}`}
                 className="text-sm font-semibold leading-6 text-sage"
                 aria-describedby="featured-post"
               >
@@ -104,10 +105,10 @@ export default function BlogList() {
             </div>
           </div>
         </article>
-        <div className="mx-auto w-full max-w-2xl border-t border-gray pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
-          <div className="-my-12 divide-y divide-timber">
+        <div className="mx-auto w-full max-w-2xl border-t border-timber pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
+          <div className="-my-9">
             {posts.map((post) => (
-              <article key={post.id} className="py-12">
+              <article key={post.id} className="py-9">
                 <div className="group relative max-w-xl">
                   <time
                     dateTime={post.datetime}
@@ -116,7 +117,7 @@ export default function BlogList() {
                     {post.date}
                   </time>
                   <h2 className="mt-2 text-lg font-semibold text-black group-hover:text-gray">
-                    <a href={post.href}>
+                    <a href={`/blog/${post.href}`}>
                       <span className="absolute inset-0" />
                       {post.title}
                     </a>
@@ -145,6 +146,11 @@ export default function BlogList() {
           </div>
         </div>
       </div>
+      <Link href="/blog">
+        <div className="mx-auto max-w-xs text-center text-md cursor mt-20 py-2 rounded-md bg-sage-100 font-semibold text-black">
+          <p>See all posts</p>
+        </div>
+      </Link>
     </div>
   );
 }
