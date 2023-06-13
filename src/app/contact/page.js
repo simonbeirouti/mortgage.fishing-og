@@ -13,7 +13,7 @@ export default function ContactPage() {
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Contact sales
         </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
+        <p className="mt-2 text-lg leading-8 text-gray-300">
           Aute magna irure deserunt veniam aliqua magna enim voluptate.
         </p>
       </div>
@@ -128,7 +128,7 @@ export default function ContactPage() {
                 />
               </Switch>
             </div>
-            <Switch.Label className="text-sm leading-6 text-gray-600">
+            <Switch.Label className="text-sm leading-6 text-gray-500">
               By selecting this, you agree to our{" "}
               <a href="#" className="font-semibold text-sage-400">
                 privacy&nbsp;policy
