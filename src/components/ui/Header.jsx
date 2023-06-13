@@ -39,15 +39,12 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item, index) => (
-            <Link
-              key={index}
-              href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              {item.name}
-            </Link>
-          ))}
+          <Link
+            href={navigation[0].href}
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            {navigation[0].name}
+          </Link>
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Categories
@@ -111,6 +108,12 @@ export default function Header() {
             </Transition>
           </Popover>
           <Link
+            href={navigation[1].href}
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            {navigation[1].name}
+          </Link>
+          <Link
             href="/blog"
             className="text-sm px-3 py-2 -mt-1 rounded-md bg-sage-100 font-semibold text-black"
           >
@@ -149,15 +152,12 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                {navigation.map((item, index) => (
-                  <a
-                    key={index}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    {item.name}
-                  </a>
-                ))}
+                <Link
+                  href={navigation[0].href}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  {navigation[0].name}
+                </Link>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
@@ -212,11 +212,18 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
+                <Link
+                  href={navigation[1].href}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  {navigation[1].name}
+                </Link>
               </div>
+
               <div className="py-6">
                 <Link
                   href="/blog"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block text-center rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:text-gray-900 bg-sage-700 hover:bg-sage-100 "
                 >
                   Blog
                 </Link>
