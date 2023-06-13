@@ -173,11 +173,14 @@ export default function Header() {
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
                         {categories.map((item, index) => (
-                          <Link key={index} href={item.href}>
-                            <Disclosure.Button className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                              {item.name}
-                            </Disclosure.Button>
-                          </Link>
+                          <Disclosure.Button
+                            key={index}
+                            as="a"
+                            href={item.href}
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                          >
+                            {item.name}
+                          </Disclosure.Button>
                         ))}
                       </Disclosure.Panel>
                     </>
@@ -198,11 +201,14 @@ export default function Header() {
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
                         {company.map((item, index) => (
-                          <Link key={index} href={item.href}>
-                            <Disclosure.Button className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                              {item.name}
-                            </Disclosure.Button>
-                          </Link>
+                          <Disclosure.Button
+                            key={index}
+                            as="a"
+                            href={item.href}
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                          >
+                            {item.name}
+                          </Disclosure.Button>
                         ))}
                       </Disclosure.Panel>
                     </>
