@@ -3,6 +3,12 @@ import H2Title from "@/components/blog/H2Title";
 import Introduction from "@/components/blog/Introduction";
 import Paragraph from "@/components/blog/Paragraph";
 import Author from "@/components/blog/Author";
+import Categories from "@/components/blog/Categories";
+
+const category = [
+  { name: "Marketing", href: "/categories/marketing" },
+  { name: "Mortgages", href: "/categories/mortgages" },
+];
 
 export default function BlogPage() {
   return (
@@ -11,6 +17,7 @@ export default function BlogPage() {
         <Introduction
           short="Deploy faster"
           title="A better workflow"
+          date="Mar 16, 2020"
           tldr="Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
                 sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
                 id at vitae feugiat egestas ac. Diam nulla orci at in viverra
@@ -56,6 +63,7 @@ export default function BlogPage() {
             isSpace
           />
         </div>
+        <Categories category={category} />
         <Author
           imgSrc="/fish-logo.png"
           imgAlt=""
