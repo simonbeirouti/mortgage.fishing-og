@@ -24,7 +24,7 @@ export default function BlogPage() {
                 scelerisque eget. Eleifend egestas fringilla sapien."
         />
         <BlogImage
-          imgSrc="/working-laptop.png"
+          imgSrc="/assets/working-laptop.png"
           imgAlt=" "
           caption="Faucibus commodo massa rhoncus, volutpat."
         />
@@ -65,7 +65,7 @@ export default function BlogPage() {
         </div>
         <Categories category={category} />
         <Author
-          imgSrc="/fish-logo.png"
+          imgSrc="/assets/fish-logo.png"
           imgAlt=""
           authorProfile="#"
           authorName="Simon Beirouti"

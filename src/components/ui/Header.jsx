@@ -22,7 +22,7 @@ export default function Header() {
           <span className="sr-only">Mortgage Fishing logo</span>
           <Image
             className="h-12 w-auto"
-            src="/fish-logo.png"
+            src="/assets/fish-logo.png"
             alt="Mortgage fishing logo"
             width={200}
             height={200}
@@ -131,7 +131,7 @@ export default function Header() {
               <span className="sr-only">Mortgage Fishing logo</span>
               <Image
                 className="h-12 w-auto"
-                src="/fish-logo.png"
+                src="/assets/fish-logo.png"
                 alt="Mortgage fishing logo"
                 width={200}
                 height={200}

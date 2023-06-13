@@ -51,7 +51,7 @@ export default function JobPage() {
           <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
             <div className="w-full lg:max-w-lg lg:flex-auto">
               <Image
-                src="/coworking-space.png"
+                src="/assets/coworking-space.png"
                 alt="Collaborative work environment: Professionals working on laptops in a spacious setting."
                 className="mt-8 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[39rem]"
                 width={1344}

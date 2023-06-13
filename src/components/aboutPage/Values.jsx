@@ -37,7 +37,7 @@ export default function Values() {
     <>
       <div className="mt-10 xl:mx-auto xl:max-w-7xl xl:px-8">
         <Image
-          src="/group-hugging.png"
+          src="/assets/group-hugging.png"
           alt="Friends embracing and celebrating financial freedom and life's milestones on a beach."
           className="aspect-[5/2] w-full object-cover rounded-lg"
           width={1000}

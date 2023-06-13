@@ -27,7 +27,7 @@ export default function Hero() {
                 <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div className="relative">
                     <Image
-                      src="/couple-reading.png"
+                      src="/assets/couple-reading.png"
                       alt="Senior couple enjoying financial articles and planning for a secure future."
                       className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
                       width={200}
@@ -39,7 +39,7 @@ export default function Hero() {
                 <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div className="relative">
                     <Image
-                      src="/presentation.png"
+                      src="/assets/presentation.png"
                       alt="Expert financial advisor explaining key financial figures and strategies on a whiteboard."
                       className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
                       width={200}
@@ -49,7 +49,7 @@ export default function Hero() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="/ladies-laughing.png"
+                      src="/assets/ladies-laughing.png"
                       alt="Friends sharing financial success stories and enjoying a relaxed conversation about personal finance."
                       className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
                       width={200}
@@ -61,7 +61,7 @@ export default function Hero() {
                 <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div className="relative">
                     <Image
-                      src="/laptop-lady.png"
+                      src="/assets/laptop-lady.png"
                       alt="Woman seeking financial guidance online, feeling puzzled while exploring financial options."
                       className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
                       width={200}
@@ -71,7 +71,7 @@ export default function Hero() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="/drinking-coffee.png"
+                      src="/assets/drinking-coffee.png"
                       alt="Woman staying informed and entertained while managing her finances, enjoying a moment of relaxation and financial empowerment."
                       className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
                       width={200}
