@@ -138,10 +138,7 @@ export default function ContactPage() {
           </Switch.Group>
         </div>
         <div className="mt-10">
-          <button
-            type="submit"
-            className="block w-full rounded-md bg-sage-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-sage-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
+          <button type="submit" className="block w-full text-center button">
             Let&apos;s chat
           </button>
         </div>
