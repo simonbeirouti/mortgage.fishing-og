@@ -5,7 +5,7 @@ export const categories = [
 ];
 
 export const navigation = [
-  { name: "About us", href: "/about-us" },
+  { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
 
