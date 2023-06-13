@@ -6,7 +6,7 @@ export default function PrivacyPage() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <PageHeader
           page="Privacy policy"
-          description="Nail down exactly what you want to read about by choosing the categories"
+          description="Protecting your privacy is our utmost priority. Learn more here."
         />
         <p className="mt-8 text-xl leading-8">
           Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At

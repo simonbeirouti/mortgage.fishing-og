@@ -4,32 +4,32 @@ const values = [
   {
     name: "Be world-class",
     description:
-      "Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.",
+      "We strive to provide top-notch financial content, ensuring our readers receive the highest quality information and insights.",
   },
   {
     name: "Share everything you know",
     description:
-      "Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.",
+      "We believe in transparently sharing our knowledge and expertise, empowering our readers with valuable and comprehensive financial information.",
   },
   {
     name: "Always learning",
     description:
-      "Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.",
+      "By continuously expanding our knowledge and staying up-to-date, we bring fresh and relevant perspectives to our readers. Helping you make informed financial decisions.",
   },
   {
     name: "Be supportive",
     description:
-      "Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.",
+      "We foster a supportive environment, offering guidance, encouragement and practical solutions to our readers. Ensuring they feel empowered and confident in their financial choices.",
   },
   {
     name: "Take responsibility",
     description:
-      "Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.",
+      "We take responsibility for the content we produce, ensuring accuracy, reliability and ethical standards. Our readers can trust the information they find on our platform.",
   },
   {
     name: "Enjoy downtime",
     description:
-      "Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.",
+      "We understand the importance of balancing financial matters with personal well-being. We embrace downtime, self-care and enjoyment as integral parts of a healthy financial journey.",
   },
 ];
 export default function Values() {
@@ -37,8 +37,8 @@ export default function Values() {
     <>
       <div className="mt-10 xl:mx-auto xl:max-w-7xl xl:px-8">
         <Image
-          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-          alt=""
+          src="/group-hugging.png"
+          alt="Friends embracing and celebrating financial freedom and life's milestones on a beach."
           className="aspect-[5/2] w-full object-cover rounded-lg"
           width={1000}
           height={1000}
@@ -51,8 +51,8 @@ export default function Values() {
             Our values
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+            Our core values drive us to deliver exceptional content that
+            empowers and benefits our readers on their financial journey.
           </p>
         </div>
         <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">

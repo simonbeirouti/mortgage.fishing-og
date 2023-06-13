@@ -9,7 +9,7 @@ export default function AboutPage() {
         <PageHeader
           short="What drives us"
           page="About us"
-          description="Nail down exactly what you want to read about by choosing the categories"
+          description="Discover our values and meet our exceptional team members."
         />
         <Values />
         <Team />

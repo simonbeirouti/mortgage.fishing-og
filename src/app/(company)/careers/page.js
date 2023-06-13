@@ -37,7 +37,7 @@ export default function JobPage() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <PageHeader
-          short="Find what your job"
+          short="Find your ideal job"
           page="Careers"
           description="We are always looking for awesome people to join us"
         />
@@ -45,8 +45,8 @@ export default function JobPage() {
           <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
             <div className="w-full lg:max-w-lg lg:flex-auto">
               <Image
-                src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1344&h=1104&q=80"
-                alt=""
+                src="/coworking-space.png"
+                alt="Collaborative work environment: Professionals working on laptops in a spacious setting."
                 className="mt-8 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[39rem]"
                 width={1344}
                 height={1104}
@@ -92,8 +92,8 @@ export default function JobPage() {
                 ))}
               </ul>
               <div className="mt-8 flex border-t border-gray-100 pt-8">
-                <Link href="#" className="text-sm leading-6 button">
-                  View all openings <span aria-hidden="true">&rarr;</span>
+                <Link href="/contact" className="text-sm leading-6 button">
+                  Contact for more <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>
             </div>

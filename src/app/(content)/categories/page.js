@@ -8,9 +8,9 @@ export default function CategoryHomePage() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <PageHeader
-          short="Find what you need"
+          short="Filter by category"
           page="Categories"
-          description="Nail down exactly what you want to read about by choosing the categories"
+          description="Browse through curated categories for focused financial insights and resources."
         />
         <ul
           role="list"

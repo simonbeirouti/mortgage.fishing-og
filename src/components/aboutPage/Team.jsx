@@ -25,9 +25,8 @@ export default function Team() {
           Our team
         </h2>
         <p className="mt-6 text-lg leading-8 text-gray-300">
-          Sit facilis neque ab nulla vel. Cum eos in laudantium. Temporibus eos
-          totam in dolorum. Nemo vel facere repellendus ut eos dolores
-          similique.
+          Our exceptional team comprises passionate financial experts dedicated
+          to delivering valuable and reliable content for our readers.
         </p>
       </div>
       <ul

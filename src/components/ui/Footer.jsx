@@ -88,7 +88,8 @@ export default function Footer() {
               Subscribe to our newsletter
             </h3>
             <p className="mt-2 text-sm leading-6 text-gray-500">
-              The latest, articles, and resources, sent to your inbox weekly.
+              The latest, greatest, articles and resources, sent directly to
+              you.
             </p>
             <form className="mt-6 sm:flex sm:max-w-md">
               <label htmlFor="email-address" className="sr-only">
@@ -128,7 +129,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-xs leading-5 text-gray md:order-1 md:mt-0">
-            &copy; 2020 Your Company, Inc. All rights reserved.
+            &copy; School of fish. All rights reserved.
           </p>
         </div>
       </div>

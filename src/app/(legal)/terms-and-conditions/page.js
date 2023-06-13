@@ -6,7 +6,7 @@ export default function TandCsPage() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <PageHeader
           page="Terms and Conditions"
-          description="Nail down exactly what you want to read about by choosing the categories"
+          description="Understand the guidelines and terms governing your use of our website."
         />
         <p className="mt-8 text-xl leading-8">
           Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At

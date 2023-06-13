@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import clsx from "clsx";
 import { Switch } from "@headlessui/react";
 
@@ -11,10 +12,10 @@ export default function ContactPage() {
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Contact sales
+          Contact us
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-300">
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+          Get in touch with us to discuss your financial needs.
         </p>
       </div>
       <form
@@ -130,9 +131,12 @@ export default function ContactPage() {
             </div>
             <Switch.Label className="text-sm leading-6 text-gray-500">
               By selecting this, you agree to our{" "}
-              <a href="#" className="font-semibold text-sage-400">
+              <Link
+                href="/privacy-policy"
+                className="font-semibold text-sage-400"
+              >
                 privacy&nbsp;policy
-              </a>
+              </Link>
               .
             </Switch.Label>
           </Switch.Group>

@@ -9,16 +9,16 @@ export default function Hero() {
             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                 <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">
-                  We are changing the way people connect.
+                  Expert insights and solutions
                 </h1>
                 <p className="relative mt-6 text-lg leading-8 text-black sm:max-w-md lg:max-w-none">
-                  Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
-                  quis cupidatat mollit aute velit. Et labore commodo nulla
-                  aliqua proident mollit ullamco exercitation tempor. Sint
-                  aliqua anim nulla sunt mollit id pariatur in voluptate cillum.
+                  Welcome to our comprehensive financial resource hub, where we
+                  provide valuable insights, practical solutions, and expert
+                  advice to help you navigate the complexities of personal and
+                  business finance.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
-                  <a href="#" className="text-sm button">
+                  <a href="/" className="text-sm button">
                     Check out blog
                   </a>
                 </div>
@@ -28,7 +28,7 @@ export default function Hero() {
                   <div className="relative">
                     <Image
                       src="/couple-reading.png"
-                      alt=""
+                      alt="Senior couple enjoying financial articles and planning for a secure future."
                       className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
                       width={200}
                       height={200}
@@ -40,7 +40,7 @@ export default function Hero() {
                   <div className="relative">
                     <Image
                       src="/presentation.png"
-                      alt=""
+                      alt="Expert financial advisor explaining key financial figures and strategies on a whiteboard."
                       className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
                       width={200}
                       height={200}
@@ -50,7 +50,7 @@ export default function Hero() {
                   <div className="relative">
                     <Image
                       src="/ladies-laughing.png"
-                      alt=""
+                      alt="Friends sharing financial success stories and enjoying a relaxed conversation about personal finance."
                       className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
                       width={200}
                       height={200}
@@ -62,7 +62,7 @@ export default function Hero() {
                   <div className="relative">
                     <Image
                       src="/laptop-lady.png"
-                      alt=""
+                      alt="Woman seeking financial guidance online, feeling puzzled while exploring financial options."
                       className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
                       width={200}
                       height={200}
@@ -72,7 +72,7 @@ export default function Hero() {
                   <div className="relative">
                     <Image
                       src="/drinking-coffee.png"
-                      alt=""
+                      alt="Woman staying informed and entertained while managing her finances, enjoying a moment of relaxation and financial empowerment."
                       className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
                       width={200}
                       height={200}

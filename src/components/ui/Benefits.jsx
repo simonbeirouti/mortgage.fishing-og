@@ -2,12 +2,12 @@ import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
 const benefits = [
-  "Competitive salaries",
-  "Flexible work hours",
-  "30 days of paid vacation",
-  "Annual team retreats",
-  "Benefits for you and your family",
-  "A great work environment",
+  "Enhanced credibility",
+  "Increased visibility",
+  "Broadened network",
+  "Lead generation",
+  "Thought leadership platform",
+  "Business growth potential",
 ];
 
 export default function Benefits() {
@@ -28,8 +28,9 @@ export default function Benefits() {
                 Join our team
               </h2>
               <p className="mt-6 text-lg leading-8 text-white">
-                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-                magnam voluptatum cupiditate veritatis in accusamus quisquam.
+                Expand your reach as a mortgage broker by becoming a writer.
+                Unlock new opportunities and enhance your business with these 6
+                benefits.
               </p>
               <ul
                 role="list"
@@ -46,7 +47,7 @@ export default function Benefits() {
                 ))}
               </ul>
               <div className="mt-10 flex">
-                <a href="#" className="leading-6 button">
+                <a href="/careers" className="leading-6 button">
                   See our job postings <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>

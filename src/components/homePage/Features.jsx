@@ -1,34 +1,34 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  BookOpenIcon,
+  LightBulbIcon,
+  QuestionMarkCircleIcon,
+  AcademicCapIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
   {
-    name: "Push to deploy",
+    name: "Expert insights",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
-    icon: CloudArrowUpIcon,
+      "Get access to in-depth articles and blog posts written by industry experts. Stay informed about the latest trends, strategies, and tips related to personal finance, investments, savings, and more.",
+    icon: LightBulbIcon,
   },
   {
-    name: "SSL certificates",
+    name: "Practical guides and How-To's",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
-    icon: LockClosedIcon,
+      "Explore a wide range of practical guides and step-by-step instructions to help you navigate various financial situations. From budgeting and debt management to tax planning and retirement savings, find actionable advice to improve your financial well-being.",
+    icon: AcademicCapIcon,
   },
   {
-    name: "Simple queues",
+    name: "Case studies and success stories",
     description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
-    icon: ArrowPathIcon,
+      "Discover real-life case studies and success stories of individuals and businesses who have achieved financial milestones. Learn from their experiences, strategies, and challenges, and gain inspiration and insights to apply to your own financial journey.",
+    icon: BookOpenIcon,
   },
   {
-    name: "Advanced security",
+    name: "Q&A and expert advice",
     description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
-    icon: FingerPrintIcon,
+      "Have burning financial questions? Take advantage of our Q&A section, where you can submit your queries and get expert advice from financial professionals. Benefit from personalized recommendations and solutions tailored to your specific needs and circumstances.",
+    icon: QuestionMarkCircleIcon,
   },
 ];
 
@@ -38,15 +38,16 @@ export default function Features() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-sage">
-            Deploy faster
+            What we can do for you
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-black sm:text-4xl">
-            Everything you need to deploy your app
+            Empower your financial journey: Unleash the potential of{" "}
+            <span className="underline underline-offset-4">YOUR</span> wealth
           </p>
           <p className="mt-6 text-lg leading-8 text-black">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
+            Gain control over your financial future with our comprehensive blog.
+            Explore expert insights, practical guides, success stories, and
+            personalized advice to unlock the full potential of your wealth.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
