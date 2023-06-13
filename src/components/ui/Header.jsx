@@ -175,7 +175,7 @@ export default function Header() {
                         {categories.map((item, index) => (
                           <Disclosure.Button
                             key={index}
-                            as="a"
+                            as={Link}
                             href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
@@ -203,7 +203,7 @@ export default function Header() {
                         {company.map((item, index) => (
                           <Disclosure.Button
                             key={index}
-                            as="a"
+                            as={Link}
                             href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
