@@ -147,7 +147,7 @@ export default function BlogList() {
         </div>
       </div>
       <Link href="/blog">
-        <div className="mx-auto max-w-xs text-center text-md cursor mt-20 py-2 rounded-md bg-sage-100 font-semibold text-black">
+        <div className="mx-auto max-w-xs text-center mt-20 button">
           <p>See all posts</p>
         </div>
       </Link>

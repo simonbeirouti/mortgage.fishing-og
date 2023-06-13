@@ -46,10 +46,7 @@ export default function Benefits() {
                 ))}
               </ul>
               <div className="mt-10 flex">
-                <a
-                  href="#"
-                  className="text-sm px-3 py-2 bg-sage-100 rounded-md font-semibold leading-6 text-black"
-                >
+                <a href="#" className="leading-6 button">
                   See our job postings <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>

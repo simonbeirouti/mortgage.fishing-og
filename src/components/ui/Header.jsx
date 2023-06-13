@@ -113,10 +113,7 @@ export default function Header() {
           >
             {navigation[1].name}
           </Link>
-          <Link
-            href="/blog"
-            className="text-sm px-3 py-2 -mt-1 rounded-md bg-sage-100 font-semibold text-black"
-          >
+          <Link href="/blog" className="text-sm -mt-1 button">
             Blog <span aria-hidden="true">&rarr;</span>
           </Link>
         </Popover.Group>
@@ -227,7 +224,7 @@ export default function Header() {
               <div className="py-6">
                 <Link
                   href="/blog"
-                  className="-mx-3 block text-center rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:text-gray-900 bg-sage-700 hover:bg-sage-100 "
+                  className="-mx-3 block text-center text-baseleading-7 button"
                 >
                   Blog
                 </Link>

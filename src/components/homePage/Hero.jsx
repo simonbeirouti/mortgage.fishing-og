@@ -18,17 +18,8 @@ export default function Hero() {
                   aliqua anim nulla sunt mollit id pariatur in voluptate cillum.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
-                  <a
-                    href="#"
-                    className="rounded-md bg-sage-100 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
-                    Get started
-                  </a>
-                  <a
-                    href="#"
-                    className="text-sm font-semibold leading-6 text-black"
-                  >
-                    Live demo <span aria-hidden="true">→</span>
+                  <a href="#" className="text-sm button">
+                    Check out blog
                   </a>
                 </div>
               </div>
