@@ -2,6 +2,12 @@ import PageHeader from "@/components/ui/PageHeader";
 import Values from "@/components/aboutPage/Values";
 import Team from "@/components/aboutPage/Team";
 
+export const metadata = {
+  title: "Mortgage Fishing | About",
+  description:
+    "Discover our values and meet our exceptional team. Get insights into our mission, vision, and commitment to empowering your financial journey.",
+};
+
 export default function AboutPage() {
   return (
     <div className="bg-white py-24 sm:py-32">

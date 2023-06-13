@@ -2,6 +2,12 @@ import PageHeader from "@/components/ui/PageHeader";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Mortgage Fishing | Careers",
+  description:
+    "Join our team of financial experts and contribute to empowering our readers on their financial journeys. Explore rewarding career opportunities with us.",
+};
+
 const jobOpenings = [
   {
     id: 1,

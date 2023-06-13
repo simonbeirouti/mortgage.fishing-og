@@ -2,6 +2,12 @@ import PageHeader from "@/components/ui/PageHeader";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Mortgage Fishing | Blog",
+  description:
+    "Explore our comprehensive financial blog for expert advice, practical guides, and valuable insights to enhance your financial well-being.",
+};
+
 const posts = [
   {
     id: 1,

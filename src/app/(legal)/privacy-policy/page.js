@@ -1,5 +1,11 @@
 import PageHeader from "@/components/ui/PageHeader";
 
+export const metadata = {
+  title: "Mortgage Fishing | Privacy policy",
+  description:
+    "Our commitment to safeguarding your privacy. Learn about our data protection practices and how we handle your personal information.",
+};
+
 export default function PrivacyPage() {
   return (
     <div className="bg-white py-24 sm:py-32">

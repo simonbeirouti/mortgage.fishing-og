@@ -3,6 +3,12 @@ import PageHeader from "@/components/ui/PageHeader";
 import Image from "next/image";
 import { categories } from "@/constants";
 
+export const metadata = {
+  title: "Mortgage Fishing | Categories",
+  description:
+    "Browse curated categories for focused financial resources and in-depth articles, covering various topics to meet your specific interests and needs.",
+};
+
 export default function CategoryHomePage() {
   return (
     <div className="bg-white py-24 sm:py-32">

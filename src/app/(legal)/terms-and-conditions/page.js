@@ -1,5 +1,11 @@
 import PageHeader from "@/components/ui/PageHeader";
 
+export const metadata = {
+  title: "Mortgage Fishing | Terms and conditions",
+  description:
+    "Understand the terms and guidelines for using our website. Review the terms of service governing your access and use of our platform.",
+};
+
 export default function TandCsPage() {
   return (
     <div className="bg-white py-24 sm:py-32">
