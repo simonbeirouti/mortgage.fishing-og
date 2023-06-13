@@ -152,6 +152,7 @@ export default function Header() {
                 <Link
                   href={navigation[0].href}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   {navigation[0].name}
                 </Link>
@@ -216,6 +217,7 @@ export default function Header() {
                 <Link
                   href={navigation[1].href}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   {navigation[1].name}
                 </Link>
