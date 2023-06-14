@@ -227,6 +227,7 @@ export default function Header() {
                 <Link
                   href="/blog"
                   className="-mx-3 block text-center text-baseleading-7 button"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Blog
                 </Link>
