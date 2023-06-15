@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# What is it
 
-## Getting Started
+This is the README for mortgage.fishing. Why create this? I wanted to build a website that is a blog at heart and use this to attract new business to myself, and others in the finance space. At it's core, it's going to have high quality content for those looking for loans to consider.
 
-First, run the development server:
+## What I used to build it
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [NextJS](https://nextjs.org)
+- [TailwindCSS](https://tailwindcss.com)
+- [Midjourney](https://midjourney.com)
+- [ChatGPT](https://chat.openai.com)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to monetize
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+I could do any of the following to monetise the website:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Run ads to other businesses in the mortgage broking space
+2. Get paid by mortgage brokers for leads
+3. Earn commision from the loan applications
 
-## Learn More
+## Current ToDos
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [x] Dynamically generate blogs from markdown files
+- [ ] Re-read content on blogging
+- [ ] Create a list of topics to create blog content on
+- [ ] Find ways to advertise the website to new users
+- [ ] Create funnel of businesses to reach out to charge for marketing
