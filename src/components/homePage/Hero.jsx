@@ -18,7 +18,7 @@ export default function Hero() {
                   business finance.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
-                  <a href="/" className="text-sm button">
+                  <a href="/blog" className="text-sm button">
                     Check out blog
                   </a>
                 </div>
