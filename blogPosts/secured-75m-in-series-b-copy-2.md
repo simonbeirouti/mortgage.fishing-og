@@ -1,6 +1,6 @@
 ---
-title: "Secured 75m in Series B"
-date: "2023-06-14"
+title: "Secured 75m in Series B new new new"
+date: "2023-06-16"
 # href: "secured-75m-in-series-b"
 description: "Libero neque aenean tincidunt nec consequat tempor. Viverra odio id velit adipiscing id. Nisi vestibulum orci eget bibendum dictum. Velit viverra posuere vulputate volutpat nunc. Nunc netus sit faucibus."
 author:
