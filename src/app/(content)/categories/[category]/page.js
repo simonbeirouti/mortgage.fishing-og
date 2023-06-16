@@ -2,8 +2,8 @@ import PageHeader from "@/components/ui/PageHeader";
 
 export default function CategoryPage() {
   return (
-    <div className="bg-white px-6 py-16 lg:px-8">
-      <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <PageHeader
           short="Find what you need"
           page="Marketing"
