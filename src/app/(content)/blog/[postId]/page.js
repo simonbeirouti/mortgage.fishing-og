@@ -29,12 +29,11 @@ export default async function BlogPage({ params }) {
 
   const { title, date, blogImage, description, category, author, contentHtml } =
     await getPostData(postId);
-  const pubDate = new Date(date).toISOString().slice(0, 10);
 
   return (
     <div className="bg-white px-6 py-16 lg:px-8">
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-        <Introduction title={title} date={pubDate} tldr={description} />
+        <Introduction title={title} date={date} tldr={description} />
         <BlogImage
           imgSrc={blogImage.image}
           imgAlt={blogImage.imageAlt}
@@ -42,7 +41,6 @@ export default async function BlogPage({ params }) {
         />
         <article className="mt-10 max-w-3xl">
           <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
-          <Link href="/">Back to home</Link>
         </article>
         <Categories categories={category} />
         <Author
