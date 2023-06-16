@@ -33,7 +33,7 @@ export default function Hero() {
                       width={200}
                       height={200}
                     />
-                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white" />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl" />
                   </div>
                 </div>
                 <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
@@ -45,7 +45,7 @@ export default function Hero() {
                       width={200}
                       height={200}
                     />
-                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white" />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl" />
                   </div>
                   <div className="relative">
                     <Image
@@ -55,7 +55,7 @@ export default function Hero() {
                       width={200}
                       height={200}
                     />
-                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white" />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl" />
                   </div>
                 </div>
                 <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
@@ -67,7 +67,7 @@ export default function Hero() {
                       width={200}
                       height={200}
                     />
-                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white" />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl" />
                   </div>
                   <div className="relative">
                     <Image
@@ -77,7 +77,7 @@ export default function Hero() {
                       width={200}
                       height={200}
                     />
-                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white" />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl" />
                   </div>
                 </div>
               </div>
