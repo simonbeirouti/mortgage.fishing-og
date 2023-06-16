@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { getSortedPostsData } from "../../../lib/posts";
 
@@ -6,9 +6,6 @@ export default function BlogList() {
   const posts = getSortedPostsData().slice(0, 3);
   const featuredPost = posts[0];
   const standardPosts = posts.slice(1, 3);
-  // console.log(posts);
-  // console.log(featuredPost);
-  // console.log(standardPosts);
 
   return (
     <div className="bg-white pb-12 sm:pb-16">
@@ -54,33 +51,32 @@ function FeaturedPost({ post }) {
       >
         {post.title}
       </h2>
-      <p className="mt-4 text-lg leading-8 text-gray">{post.title}</p>
+      <p className="mt-4 text-lg leading-8 text-gray">{post.description}</p>
       <div className="mt-4 flex flex-col justify-between gap-6 sm:mt-8 sm:flex-row-reverse sm:gap-8 lg:mt-4 lg:flex-col">
         <div className="flex">
           <a
-            href={`blog/${post.href}`}
+            href={`blog/${post.id}`}
             className="text-sm font-semibold leading-6 text-sage"
             aria-describedby="featured-post"
           >
             Continue reading <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
-        {/* <div className="flex lg:border-t lg:border-timber lg:pt-8">
+        <div className="flex lg:border-t lg:border-timber lg:pt-8">
           <a
-            href={href}
+            href={post.author.href}
             className="flex gap-x-2.5 text-sm font-semibold leading-6 text-gray"
           >
             <Image
-              // src={imageUrl}
-              src=""
+              src={post.author.imageUrl}
               alt=""
               className="h-6 w-6 flex-none rounded-full"
               width={100}
               height={100}
             />
-            {name}
+            {post.author.name}
           </a>
-        </div> */}
+        </div>
       </div>
     </article>
   );
@@ -104,21 +100,21 @@ function StandardPost({ post }) {
         </h2>
         <p className="mt-4 text-sm leading-6 text-black">{post.description}</p>
       </div>
-      {/* <div className="mt-4 flex">
+      <div className="mt-4 flex">
         <a
-          href={href}
+          href={post.author.href}
           className="relative flex gap-x-2.5 text-sm font-semibold leading-6 text-gray"
         >
           <Image
-            src={imageUrl}
+            src={post.author.imageUrl}
             alt=""
             className="h-6 w-6 flex-none rounded-full"
             width={100}
             height={100}
           />
-          {name}
+          {post.author.name}
         </a>
-      </div> */}
+      </div>
     </article>
   );
 }
