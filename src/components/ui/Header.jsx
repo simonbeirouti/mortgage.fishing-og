@@ -11,6 +11,9 @@ import { navigation, categories, company } from "@/constants";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const shortClose = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className="bg-white">
@@ -135,12 +138,13 @@ export default function Header() {
                 alt="Mortgage fishing logo"
                 width={200}
                 height={200}
+                onClick={shortClose}
               />
             </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={shortClose}
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -152,7 +156,7 @@ export default function Header() {
                 <Link
                   href={navigation[0].href}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={shortClose}
                 >
                   {navigation[0].name}
                 </Link>
@@ -176,7 +180,7 @@ export default function Header() {
                             as={Link}
                             href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                            onClick={() => setMobileMenuOpen(false)}
+                            onClick={shortClose}
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -205,7 +209,7 @@ export default function Header() {
                             as={Link}
                             href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                            onClick={() => setMobileMenuOpen(false)}
+                            onClick={shortClose}
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -217,7 +221,7 @@ export default function Header() {
                 <Link
                   href={navigation[1].href}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={shortClose}
                 >
                   {navigation[1].name}
                 </Link>
@@ -227,7 +231,7 @@ export default function Header() {
                 <Link
                   href="/blog"
                   className="-mx-3 block text-center text-baseleading-7 button"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={shortClose}
                 >
                   Blog
                 </Link>
