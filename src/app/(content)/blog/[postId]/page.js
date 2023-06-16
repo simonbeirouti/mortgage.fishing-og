@@ -1,13 +1,10 @@
 import BlogImage from "@/components/blog/BlogImage";
-// import H2Title from "@/components/blog/H2Title";
 import Introduction from "@/components/blog/Introduction";
-// import Paragraph from "@/components/blog/Paragraph";
 import Author from "@/components/blog/Author";
 import Categories from "@/components/blog/Categories";
 
 import { getPostData, getSortedPostsData } from "../../../../../lib/posts";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 
 export function generateMetaData({ params }) {
   const posts = getSortedPostsData();
@@ -40,7 +37,10 @@ export default async function BlogPage({ params }) {
           caption={blogImage.imageAlt}
         />
         <article className="mt-10 max-w-3xl">
-          <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          <section
+            className="markdown"
+            dangerouslySetInnerHTML={{ __html: contentHtml }}
+          />
         </article>
         <Categories categories={category} />
         <Author
@@ -50,44 +50,6 @@ export default async function BlogPage({ params }) {
           authorName={author.name}
           title={author.title}
         />
-
-        {/* 
-        <div className="mt-10 max-w-3xl">
-          <Paragraph
-            content="Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-            risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-            Id dolor praesent donec est. Odio penatibus risus viverra
-            tellus varius sit neque erat velit. Faucibus commodo massa
-            rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-            mauris semper sed amet vitae sed turpis id."
-          />
-          <Paragraph
-            content="Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-            duis odio id et. Id blandit molestie auctor fermentum
-            dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-            varius vulputate et ultrices hac adipiscing egestas. Iaculis
-            convallis ac tempor et ut. Ac lorem vel integer orci."
-            isSpace
-          />
-          <H2Title content="No server? No problem." />
-          <Paragraph
-            content="Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-            consequat in. Convallis arcu ipsum urna nibh. Pharetra,
-            euismod vitae interdum mauris enim, consequat vulputate nibh.
-            Maecenas pellentesque id sed tellus mauris, ultrices mauris.
-            Tincidunt enim cursus ridiculus mi. Pellentesque nam sed
-            nullam sed diam turpis ipsum eu a sed convallis diam."
-            isSpace
-          />
-          <Paragraph
-            content="Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus
-            enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor
-            praesent donec est. Odio penatibus risus viverra tellus varius sit
-            neque erat velit."
-            isSpace
-          />
-        </div>
-         */}
       </div>
     </div>
   );
