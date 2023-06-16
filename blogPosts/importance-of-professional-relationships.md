@@ -3,7 +3,7 @@ title: "Importance of building professional relationships"
 date: "2023-06-16"
 blogImage:
   {
-    image: "/assets/professional-meeting.png",
+    image: "/posts/professional-meeting.png",
     imageAlt: "A professional meeting where the attendees are all happy and talking",
   }
 description: "The Importance of Professional Relationships in the Financial Industry. Discover how cultivating strong connections drives trust, collaboration, and growth."
