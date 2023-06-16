@@ -1,7 +1,7 @@
-export default function Categories({ category }) {
+export default function Categories({ categories }) {
   return (
     <div className="mt-10">
-      {category.map((category, index) => (
+      {categories.map((category, index) => (
         <a
           key={index}
           href={category.href}
