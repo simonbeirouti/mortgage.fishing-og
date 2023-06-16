@@ -87,7 +87,7 @@ function StandardPost({ post }) {
     <article key={post.id} className="py-9">
       <div className="group relative max-w-xl">
         <time
-          dateTime={post.datetime}
+          dateTime={post.date}
           className="block text-sm leading-6 text-black"
         >
           {post.date}
