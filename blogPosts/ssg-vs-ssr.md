@@ -1,13 +1,24 @@
 ---
-title: "Static Site Generation vs Server Side Rendering"
-date: "2023-03-17"
-# href: "ssg-vs-ssr"
+title: "Secured 75m in Series B"
+date: "2023-06-13"
+blogImage:
+  {
+    image: "/assets/working-laptop.png",
+    imageAlt: "Two men working on a laptop in a cold office",
+  }
 description: "Libero neque aenean tincidunt nec consequat tempor. Viverra odio id velit adipiscing id. Nisi vestibulum orci eget bibendum dictum. Velit viverra posuere vulputate volutpat nunc. Nunc netus sit faucibus."
+category:
+  [
+    { name: "Marketing", href: "/categories/marketing" },
+    { name: "Mortgages", href: "/categories/mortgages" },
+  ]
 author:
   {
     name: "Michael Foster",
+    title: "Educator",
     href: "#",
     imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    imageAlt: "Photo of Michael Foster",
   }
 ---
 
