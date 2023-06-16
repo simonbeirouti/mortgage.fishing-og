@@ -93,7 +93,7 @@ function StandardPost({ post }) {
           {post.date}
         </time>
         <h2 className="mt-2 text-lg font-semibold text-black group-hover:text-gray">
-          <a href={`/blog/${post.href}`}>
+          <a href={`/blog/${post.id}`}>
             <span className="absolute inset-0" />
             {post.title}
           </a>
