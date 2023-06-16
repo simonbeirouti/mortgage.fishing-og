@@ -54,28 +54,28 @@ function FeaturedPost({ post }) {
       <p className="mt-4 text-lg leading-8 text-gray">{post.description}</p>
       <div className="mt-4 flex flex-col justify-between gap-6 sm:mt-8 sm:flex-row-reverse sm:gap-8 lg:mt-4 lg:flex-col">
         <div className="flex">
-          <a
+          <Link
             href={`blog/${post.id}`}
             className="text-sm font-semibold leading-6 text-sage"
             aria-describedby="featured-post"
           >
             Continue reading <span aria-hidden="true">&rarr;</span>
-          </a>
+          </Link>
         </div>
         <div className="flex lg:border-t lg:border-timber lg:pt-8">
-          <a
+          <Link
             href={post.author.href}
             className="flex gap-x-2.5 text-sm font-semibold leading-6 text-gray"
           >
             <Image
               src={post.author.imageUrl}
-              alt=""
+              alt={post.author.imageAlt}
               className="h-6 w-6 flex-none rounded-full"
               width={100}
               height={100}
             />
             {post.author.name}
-          </a>
+          </Link>
         </div>
       </div>
     </article>
