@@ -28,7 +28,7 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-20 md:mt-0">
+              <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
                   Categories
                 </h3>
@@ -64,7 +64,7 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-10 md:mt-0">
+              <div className="mt-20 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
                   Legal
                 </h3>
