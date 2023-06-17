@@ -1,7 +1,19 @@
 export const categories = [
-  { name: "Marketing", href: "/categories/marketing", image: "/fish-logo.png" },
-  { name: "Mortgage", href: "/categories/mortgage", image: "/fish-logo.png" },
-  { name: "Marketing", href: "/categories/marketing", image: "/fish-logo.png" },
+  {
+    name: "Marketing",
+    href: "/categories/marketing",
+    image: "/assets/fish-logo.png",
+  },
+  {
+    name: "Finance",
+    href: "/categories/finance",
+    image: "/assets/fish-logo.png",
+  },
+  {
+    name: "Business",
+    href: "/categories/business",
+    image: "/assets/fish-logo.png",
+  },
 ];
 
 export const navigation = [
@@ -9,7 +21,10 @@ export const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
-export const company = [{ name: "Careers", href: "/careers" }];
+export const company = [
+  { name: "Blog", href: "/blog" },
+  { name: "Careers", href: "/careers" },
+];
 
 export const legal = [
   { name: "Terms & conditions", href: "/terms-and-conditions" },
