@@ -11,13 +11,16 @@ export const metadata = {
 
 export default function CategoryHomePage() {
   const posts = getSortedPostsData();
-  const uniqueCategories = new Set();
+  const uniqueCategories = [];
+  const uniqueCategoryNames = [];
   posts.forEach((post) => {
     post.category.forEach((category) => {
-      uniqueCategories.add(category);
+      if (!uniqueCategoryNames.includes(category.name)) {
+        uniqueCategoryNames.push(category.name);
+        uniqueCategories.push(category);
+      }
     });
   });
-  const uniqueCategoryArray = Array.from(uniqueCategories);
 
   return (
     <div className="bg-white py-24 sm:py-32">
@@ -31,7 +34,7 @@ export default function CategoryHomePage() {
           role="list"
           className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 py-16"
         >
-          {uniqueCategoryArray.map((category, index) => (
+          {uniqueCategories.map((category, index) => (
             <li key={index} className="relative">
               <Link
                 href={category.href}
