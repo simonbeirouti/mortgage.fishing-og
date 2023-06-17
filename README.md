@@ -20,6 +20,9 @@ I could do any of the following to monetise the website:
 ## Current ToDos
 
 - [x] Dynamically generate blogs from markdown files
+- [ ] Filter the blog posts through cartegories
+- [ ] Fix title issue on blog pages
+- [ ] Deploy live version
 - [ ] Re-read content on blogging
 - [ ] Create a list of topics to create blog content on
 - [ ] Find ways to advertise the website to new users
