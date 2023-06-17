@@ -1,7 +1,7 @@
 import Link from "next/link";
 import PageHeader from "@/components/ui/PageHeader";
 import Image from "next/image";
-import { categories } from "@/constants";
+import { getSortedPostsData } from "../../../../lib/posts";
 
 export const metadata = {
   title: "Mortgage Fishing | Categories",
@@ -10,6 +10,15 @@ export const metadata = {
 };
 
 export default function CategoryHomePage() {
+  const posts = getSortedPostsData();
+  const uniqueCategories = new Set();
+  posts.forEach((post) => {
+    post.category.forEach((category) => {
+      uniqueCategories.add(category);
+    });
+  });
+  const uniqueCategoryArray = Array.from(uniqueCategories);
+
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -22,14 +31,14 @@ export default function CategoryHomePage() {
           role="list"
           className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 py-16"
         >
-          {categories.map((category, index) => (
+          {uniqueCategoryArray.map((category, index) => (
             <li key={index} className="relative">
               <Link
                 href={category.href}
                 className="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100"
               >
                 <Image
-                  src={category.image}
+                  src=""
                   alt=""
                   className="pointer-events-none object-cover group-hover:opacity-75"
                   width={300}
@@ -40,7 +49,7 @@ export default function CategoryHomePage() {
                   className="absolute inset-0 focus:outline-none"
                 >
                   <span className="sr-only">
-                    View post in {category.name} category
+                    View posts in {category.name} category
                   </span>
                 </button>
               </Link>
