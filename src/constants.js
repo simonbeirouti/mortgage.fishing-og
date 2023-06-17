@@ -2,17 +2,14 @@ export const categories = [
   {
     name: "Marketing",
     href: "/categories/marketing",
-    image: "/assets/fish-logo.png",
   },
   {
     name: "Finance",
     href: "/categories/finance",
-    image: "/assets/fish-logo.png",
   },
   {
     name: "Business",
     href: "/categories/business",
-    image: "/assets/fish-logo.png",
   },
 ];
 
