@@ -16,12 +16,12 @@ export const categories = [
 export const navigation = [
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
+  { name: "Careers", href: "/careers" },
 ];
 
 export const company = [
   { name: "Blog", href: "/blog" },
   { name: "Categories", href: "/categories" },
-  { name: "Careers", href: "/careers" },
 ];
 
 export const legal = [
