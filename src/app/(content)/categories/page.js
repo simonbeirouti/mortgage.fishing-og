@@ -1,12 +1,43 @@
 import Link from "next/link";
 import PageHeader from "@/components/ui/PageHeader";
-import Image from "next/image";
 import { getSortedPostsData } from "../../../../lib/posts";
+import {
+  BriefcaseIcon,
+  BanknotesIcon,
+  PresentationChartBarIcon,
+} from "@heroicons/react/20/solid";
 
 export const metadata = {
   title: "Mortgage Fishing | Categories",
   description:
     "Browse curated categories for focused financial resources and in-depth articles, covering various topics to meet your specific interests and needs.",
+};
+
+const catImage = {
+  business: {
+    icon: (
+      <BriefcaseIcon
+        className="text-gray-300 w-full h-full p-4"
+        aria-hidden="true"
+      />
+    ),
+  },
+  finance: {
+    icon: (
+      <BanknotesIcon
+        className="text-gray-300 w-full h-full p-4"
+        aria-hidden="true"
+      />
+    ),
+  },
+  marketing: {
+    icon: (
+      <PresentationChartBarIcon
+        className="text-gray-300 w-full h-full p-4"
+        aria-hidden="true"
+      />
+    ),
+  },
 };
 
 export default function CategoryHomePage() {
@@ -40,13 +71,7 @@ export default function CategoryHomePage() {
                 href={category.href}
                 className="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100"
               >
-                <Image
-                  src=""
-                  alt=""
-                  className="pointer-events-none object-cover group-hover:opacity-75"
-                  width={300}
-                  height={300}
-                />
+                {catImage[category.name.toLowerCase()].icon}
                 <button
                   type="button"
                   className="absolute inset-0 focus:outline-none"
