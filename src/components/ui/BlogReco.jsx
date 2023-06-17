@@ -41,10 +41,10 @@ export default function BlogReco() {
                 />
                 <div className="text-sm leading-6">
                   <p className="font-semibold text-gray-900">
-                    <a href={post.author.href}>
+                    <Link href={post.author.href}>
                       <span className="absolute inset-0" />
                       {post.author.name}
-                    </a>
+                    </Link>
                   </p>
                   <p className="text-gray-600">{post.author.title}</p>
                 </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Hero() {
@@ -18,9 +19,9 @@ export default function Hero() {
                   business finance.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
-                  <a href="/blog" className="text-sm button">
-                    Check out blog
-                  </a>
+                  <Link href="/blog" className="text-sm button">
+                    To the blog!
+                  </Link>
                 </div>
               </div>
               <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">

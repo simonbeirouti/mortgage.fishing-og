@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Author({
   imgSrc,
@@ -18,10 +19,10 @@ export default function Author({
       />
       <div className="text-sm leading-6">
         <p className="font-semibold text-gray-900">
-          <a href={authorProfile}>
+          <Link href={authorProfile}>
             <span className="absolute inset-0" />
             {authorName}
-          </a>
+          </Link>
         </p>
         <p className="text-gray-600">{title}</p>
       </div>

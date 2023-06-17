@@ -1,5 +1,6 @@
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import Link from "next/link";
 
 const benefits = [
   "Enhanced credibility",
@@ -47,9 +48,9 @@ export default function Benefits() {
                 ))}
               </ul>
               <div className="mt-10 flex">
-                <a href="/careers" className="leading-6 button">
+                <Link href="/careers" className="leading-6 button">
                   See our job postings <span aria-hidden="true">&rarr;</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
