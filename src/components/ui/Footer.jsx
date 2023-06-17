@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Navigation
+                  Company
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.map((item, index) => (
@@ -28,7 +28,7 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-10 md:mt-0">
+              <div className="mt-20 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
                   Categories
                 </h3>
@@ -49,7 +49,7 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Company
+                  Content
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {company.map((item, index) => (
@@ -64,7 +64,7 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="md:mt-0">
+              <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
                   Legal
                 </h3>
