@@ -23,6 +23,7 @@ export const navigation = [
 
 export const company = [
   { name: "Blog", href: "/blog" },
+  { name: "Categories", href: "/categories" },
   { name: "Careers", href: "/careers" },
 ];
 
