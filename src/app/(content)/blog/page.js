@@ -1,7 +1,7 @@
 import PageHeader from "@/components/ui/PageHeader";
 import Image from "next/image";
 import Link from "next/link";
-import { getSortedPostsData } from "../../../../lib/posts";
+import { getSortedPostsData } from "@/lib/posts";
 
 export const metadata = {
   title: "Mortgage Fishing | Blog",
