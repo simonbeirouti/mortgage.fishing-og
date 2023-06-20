@@ -21,6 +21,7 @@ I could do any of the following to monetise the website:
 
 - [x] Dynamically generate blogs from markdown files
 - [x] Filter the blog posts through cartegories
+- [ ] Integrate resend into project for contact form
 - [ ] Fix metadata issue on blog pages
 - [ ] Create author pages
 - [ ] Filter the blog posts based on author
