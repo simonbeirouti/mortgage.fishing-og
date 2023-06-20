@@ -1,5 +1,5 @@
 import PageHeader from "@/components/ui/PageHeader";
-import { getSortedPostsData } from "../../../../../lib/posts";
+import { getSortedPostsData } from "@/lib/posts";
 import Image from "next/image";
 import Link from "next/link";
 
