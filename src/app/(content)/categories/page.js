@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PageHeader from "@/components/ui/PageHeader";
-import { getSortedPostsData } from "../../../../lib/posts";
+import { postCategories } from "@/lib/functions";
 import {
   BriefcaseIcon,
   BanknotesIcon,
@@ -41,18 +41,7 @@ const catImage = {
 };
 
 export default function CategoryHomePage() {
-  const posts = getSortedPostsData();
-  const uniqueCategories = [];
-  const uniqueCategoryNames = [];
-  posts.forEach((post) => {
-    post.category.forEach((category) => {
-      if (!uniqueCategoryNames.includes(category.name)) {
-        uniqueCategoryNames.push(category.name);
-        uniqueCategories.push(category);
-      }
-    });
-  });
-
+  const uniqueCategories = postCategories();
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
