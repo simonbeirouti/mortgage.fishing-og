@@ -1,10 +1,9 @@
 import Image from "next/image";
-import { getSortedPostsData } from "../../../lib/posts";
+import { getRandomPosts } from "@/lib/functions";
 import Link from "next/link";
 
 export default function BlogReco() {
-  const posts = getSortedPostsData();
-  const randomPosts = getRandomPosts(posts, 3);
+  const randomPosts = getRandomPosts();
 
   return (
     <div className="bg-white pb-24 sm:pb-32">
@@ -55,18 +54,4 @@ export default function BlogReco() {
       </div>
     </div>
   );
-}
-
-function getRandomPosts(posts, count) {
-  // Create a copy of the original array to avoid modifying it
-  const shuffledPosts = [...posts];
-
-  // Perform Fisher-Yates shuffle
-  for (let i = shuffledPosts.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledPosts[i], shuffledPosts[j]] = [shuffledPosts[j], shuffledPosts[i]];
-  }
-
-  // Return the first 'count' elements
-  return shuffledPosts.slice(0, count);
 }
