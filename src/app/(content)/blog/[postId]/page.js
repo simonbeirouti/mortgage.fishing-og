@@ -3,7 +3,7 @@ import Introduction from "@/components/blog/Introduction";
 import Author from "@/components/blog/Author";
 import Categories from "@/components/blog/Categories";
 
-import { getPostData, getSortedPostsData } from "../../../../../lib/posts";
+import { getPostData, getSortedPostsData } from "@/lib/posts";
 import { notFound } from "next/navigation";
 
 export function generateMetaData({ params }) {
