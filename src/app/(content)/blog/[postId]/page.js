@@ -6,20 +6,51 @@ import Categories from "@/components/blog/Categories";
 import { getPostData, getSortedPostsData } from "@/lib/posts";
 import { notFound } from "next/navigation";
 
-export function generateMetaData({ params }) {
+export const revalidate = 86400;
+
+export function generateMetadata({ params: { postId } }) {
   const posts = getSortedPostsData();
-  const { postId } = params;
   const post = posts.find((post) => post.id === postId);
+  const keywords = [].concat(post.keywords);
+
   if (!post) {
-    return { title: "Post not found" };
+    return {
+      title: "Mortgage Fishing | Post not found",
+    };
   }
 
-  return { title: post.title };
+  return {
+    title: `Mortgage Fishing | ${post.title}`,
+    description: post.description,
+    keywords: keywords,
+    authors: [{ name: post.author.name, url: post.author.href }],
+    creator: post.author.name,
+    publisher: post.author.name,
+    openGraph: {
+      title: `Mortgage Fishing | ${post.title}`,
+      description: post.description,
+      url: `https://mortgagefishing.com/blog/${post.id}`,
+      type: "article",
+      article: {
+        publishedTime: post.date,
+        modifiedTime: post.date,
+        authors: [post.author.name],
+        tags: keywords,
+      },
+      images: [
+        {
+          url: post.blogImage.image,
+          width: 500,
+          height: 500,
+          alt: post.blogImage.imageAlt,
+        },
+      ],
+    },
+  };
 }
 
-export default async function BlogPage({ params }) {
+export default async function BlogPage({ params: { postId } }) {
   const posts = getSortedPostsData();
-  const { postId } = params;
   if (!posts.find((post) => post.id === postId)) {
     return notFound();
   }
