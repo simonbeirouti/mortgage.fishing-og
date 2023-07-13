@@ -7,6 +7,7 @@ blogImage:
     imageAlt: "A professional meeting where the attendees are all happy and talking",
   }
 description: "The Importance of Professional Relationships in the Financial Industry. Discover how cultivating strong connections drives trust, collaboration, and growth."
+keywords: ["business", "mortgage broking", "advice", "update", "interest rates"]
 category:
   [
     { name: "Marketing", href: "/categories/marketing" },
