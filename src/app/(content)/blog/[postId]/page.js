@@ -8,6 +8,13 @@ import { notFound } from "next/navigation";
 
 export const revalidate = 86400;
 
+export function generateStaticParams() {
+  const posts = getSortedPostsData();
+  return posts.map((post) => ({
+    postId: post.id,
+  }));
+}
+
 export function generateMetadata({ params: { postId } }) {
   const posts = getSortedPostsData();
   const post = posts.find((post) => post.id === postId);
