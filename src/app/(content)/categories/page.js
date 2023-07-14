@@ -17,7 +17,7 @@ const catImage = {
   business: {
     icon: (
       <BriefcaseIcon
-        className="text-gray-300 w-full h-full p-4"
+        className="text-sage-400 w-full h-full p-4"
         aria-hidden="true"
       />
     ),
@@ -25,7 +25,7 @@ const catImage = {
   finance: {
     icon: (
       <BanknotesIcon
-        className="text-gray-300 w-full h-full p-4"
+        className="text-sage-400 w-full h-full p-4"
         aria-hidden="true"
       />
     ),
@@ -33,7 +33,7 @@ const catImage = {
   marketing: {
     icon: (
       <PresentationChartBarIcon
-        className="text-gray-300 w-full h-full p-4"
+        className="text-sage-400 w-full h-full p-4"
         aria-hidden="true"
       />
     ),
