@@ -6,6 +6,27 @@ export const metadata = {
   title: "Mortgage Fishing | Careers",
   description:
     "Join our team of financial experts and contribute to empowering our readers on their financial journeys. Explore rewarding career opportunities with us.",
+  keywords: [
+    "mortgage careers",
+    "jobs in mortgage broking",
+    "mortgage brokers",
+    "entry level jobs in mortgage broking",
+  ],
+  openGraph: {
+    title: "Mortgage Fishing | Careers",
+    description:
+      "Join our team of financial experts and contribute to empowering our readers on their financial journeys. Explore rewarding career opportunities with us.",
+    url: "https://mortgagefishing.com/careers",
+    type: "website",
+    images: [
+      {
+        url: "/assets/coworking-space.png",
+        width: 500,
+        height: 500,
+        alt: "Mortgage Fishing Blog",
+      },
+    ],
+  },
 };
 
 const jobOpenings = [
