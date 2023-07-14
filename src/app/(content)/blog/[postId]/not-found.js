@@ -16,7 +16,7 @@ export default function NotFound() {
         <div className="mx-auto mt-16 flow-root max-w-lg sm:mt-10">
           <div className="mt-10 flex justify-center">
             <a href="/blog" className="text-sm button">
-              To the blog!
+              Blog
             </a>
           </div>
         </div>
