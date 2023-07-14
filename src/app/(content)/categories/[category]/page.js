@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 
 export function generateMetadata({ params }) {
   const posts = getSortedPostsData();
+  const pageName =
+    params.category.charAt(0).toUpperCase() + params.category.slice(1);
 
   const filteredPosts = posts.filter((post) =>
     post.category.some(
@@ -20,10 +22,8 @@ export function generateMetadata({ params }) {
   }
 
   return {
-    title: `Mortgage Fishing | ${
-      params.category.charAt(0).toUpperCase() + params.category.slice(1)
-    }`,
-    description: `The blog posts under the ${params.category} category where you can read our thoughts about ${params.category} within the mortgage industry.`,
+    title: `Mortgage Fishing | ${pageName}`,
+    description: `The blog posts under the ${pageName} category where you can read our thoughts about ${pageName} within the mortgage industry.`,
     keywords: [
       "business",
       "finance",
@@ -37,11 +37,19 @@ export function generateMetadata({ params }) {
       "mortgage brokers",
     ],
     openGraph: {
-      title: `Mortgage Fishing | ${params.category}`,
-      description: `The blog posts under the ${params.category} category where you can read our thoughts about ${params.category} within the mortgage industry.`,
+      title: `Mortgage Fishing | ${pageName}`,
+      description: `The blog posts under the ${pageName} category where you can read our thoughts about ${pageName} within the mortgage industry.`,
       url: `https://mortgagefishing.com/blog/${params.category}`,
       type: "website",
     },
+    images: [
+      {
+        url: "/assets/working-laptop.png",
+        width: 500,
+        height: 500,
+        alt: "two men working at a laptop",
+      },
+    ],
   };
 }
 
