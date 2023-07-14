@@ -2,6 +2,48 @@ import PageHeader from "@/components/ui/PageHeader";
 import { getSortedPostsData } from "@/lib/posts";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+
+export function generateMetadata({ params }) {
+  const posts = getSortedPostsData();
+
+  const filteredPosts = posts.filter((post) =>
+    post.category.some(
+      (category) => category.name.toLowerCase() === params.category
+    )
+  );
+
+  if (filteredPosts.length === 0) {
+    return {
+      title: "Mortgage Fishing | Posts not found",
+    };
+  }
+
+  return {
+    title: `Mortgage Fishing | ${
+      params.category.charAt(0).toUpperCase() + params.category.slice(1)
+    }`,
+    description: `The blog posts under the ${params.category} category where you can read our thoughts about ${params.category} within the mortgage industry.`,
+    keywords: [
+      "business",
+      "finance",
+      "marketing",
+      "free business information",
+      "free finance information",
+      "free marketing information",
+      "free information",
+      "mortgage rates",
+      "financial industry",
+      "mortgage brokers",
+    ],
+    openGraph: {
+      title: `Mortgage Fishing | ${params.category}`,
+      description: `The blog posts under the ${params.category} category where you can read our thoughts about ${params.category} within the mortgage industry.`,
+      url: `https://mortgagefishing.com/blog/${params.category}`,
+      type: "website",
+    },
+  };
+}
 
 export default function CategoryPage({ params }) {
   const description = `Find a curated list of blogs under the ${params.category} category.`;
@@ -12,6 +54,10 @@ export default function CategoryPage({ params }) {
       (category) => category.name.toLowerCase() === params.category
     )
   );
+
+  if (filteredPosts.length === 0) {
+    return notFound();
+  }
 
   return (
     <div className="bg-white py-24 sm:py-32">
