@@ -22,6 +22,8 @@ I could do any of the following to monetise the website:
 _Highest_
 
 - [ ] Integrate resend into project for contact form
+- [ ] Single components for metadata
+- [ ] Single file for core site content
 
 _Medium_
 
