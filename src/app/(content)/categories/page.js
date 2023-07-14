@@ -11,6 +11,34 @@ export const metadata = {
   title: "Mortgage Fishing | Categories",
   description:
     "Browse curated categories for focused financial resources and in-depth articles, covering various topics to meet your specific interests and needs.",
+  keywords: [
+    "learning finance",
+    "learning marketing",
+    "learning business",
+    "curated learning",
+    "free business information",
+    "free finance information",
+    "free marketing information",
+    "free information",
+    "mortgage rates",
+    "financial industry",
+    "mortgage brokers",
+  ],
+  openGraph: {
+    title: `Mortgage Fishing | Categories`,
+    description:
+      "Browse curated categories for focused financial resources and in-depth articles, covering various topics to meet your specific interests and needs.",
+    url: `https://mortgagefishing.com/blog/categories`,
+    type: "website",
+  },
+  images: [
+    {
+      url: "/assets/working-laptop.png",
+      width: 500,
+      height: 500,
+      alt: "two men working at a laptop",
+    },
+  ],
 };
 
 const catImage = {
