@@ -30,15 +30,15 @@ export const metadata = {
       "Browse curated categories for focused financial resources and in-depth articles, covering various topics to meet your specific interests and needs.",
     url: `https://mortgagefishing.com/blog/categories`,
     type: "website",
+    images: [
+      {
+        url: "/assets/working-laptop.png",
+        width: 500,
+        height: 500,
+        alt: "two men working at a laptop",
+      },
+    ],
   },
-  images: [
-    {
-      url: "/assets/working-laptop.png",
-      width: 500,
-      height: 500,
-      alt: "two men working at a laptop",
-    },
-  ],
 };
 
 const catImage = {

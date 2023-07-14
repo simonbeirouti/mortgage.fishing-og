@@ -16,6 +16,14 @@ export const metadata = {
       "Our commitment to safeguarding your privacy. Learn about our data protection practices and how we handle your personal information.",
     url: "https://mortgagefishing.com/privacy-policy",
     type: "website",
+    images: [
+      {
+        url: "/assets/working-laptop.png",
+        width: 500,
+        height: 500,
+        alt: "two men working at a laptop",
+      },
+    ],
   },
 };
 
