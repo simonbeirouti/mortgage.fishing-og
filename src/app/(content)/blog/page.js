@@ -7,6 +7,24 @@ export const metadata = {
   title: "Mortgage Fishing | Blog",
   description:
     "Explore our comprehensive financial blog for expert advice, practical guides, and valuable insights to enhance your financial well-being.",
+  keywords: [
+    "mortgages",
+    "interest rates",
+    "mortgage rates",
+    "mortgage brokers",
+    "mortgage rates informations",
+    "free information",
+  ],
+  opengraph: {
+    images: [
+      {
+        url: "/assets/couple-reading.png",
+        width: 500,
+        height: 500,
+        alt: "Mortgage Fishing Blog",
+      },
+    ],
+  },
 };
 
 export default function BlogHomePage() {
