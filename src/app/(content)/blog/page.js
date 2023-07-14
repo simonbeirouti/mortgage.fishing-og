@@ -16,6 +16,11 @@ export const metadata = {
     "free information",
   ],
   openGraph: {
+    title: "Mortgage Fishing | Blog",
+    description:
+      "Explore our comprehensive financial blog for expert advice, practical guides, and valuable insights to enhance your financial well-being.",
+    url: "https://mortgagefishing.com/blog",
+    type: "website",
     images: [
       {
         url: "/assets/couple-reading.png",
