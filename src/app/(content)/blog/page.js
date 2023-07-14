@@ -12,7 +12,7 @@ export const metadata = {
     "interest rates",
     "mortgage rates",
     "mortgage brokers",
-    "mortgage rates informations",
+    "mortgage rates information",
     "free information",
   ],
   openGraph: {
