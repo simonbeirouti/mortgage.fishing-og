@@ -19,14 +19,25 @@ I could do any of the following to monetise the website:
 
 ## Current ToDos
 
-- [x] Dynamically generate blogs from markdown files
-- [x] Filter the blog posts through cartegories
+_Highest_
+
 - [ ] Integrate resend into project for contact form
-- [ ] Fix metadata issue on blog pages
+
+_Medium_
+
 - [ ] Create author pages
-- [ ] Filter the blog posts based on author
-- [ ] Deploy live version
 - [ ] Re-read content on blogging
-- [ ] Create a list of topics to create blog content on
-- [ ] Find ways to advertise the website to new users
+  - [ ] Create a list of topics to create blog content on
 - [ ] Create funnel of businesses to reach out to charge for marketing
+  - [ ] Find ways to advertise the website to new users
+
+_Low_
+
+- [ ] Filter the blog posts based on author
+
+_Done_
+
+- [x] Dynamically generate blogs from markdown files 16th July 2023
+- [x] Filter the blog posts through categories 17th June 2023
+- [x] Fix metadata issue on blog pages 13th July 2023
+- [x] Deploy live version 14th July 2023
