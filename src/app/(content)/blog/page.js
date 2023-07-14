@@ -15,7 +15,7 @@ export const metadata = {
     "mortgage rates informations",
     "free information",
   ],
-  opengraph: {
+  openGraph: {
     images: [
       {
         url: "/assets/couple-reading.png",
