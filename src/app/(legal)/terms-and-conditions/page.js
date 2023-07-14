@@ -4,6 +4,18 @@ export const metadata = {
   title: "Mortgage Fishing | Terms and conditions",
   description:
     "Understand the terms and guidelines for using our website. Review the terms of service governing your access and use of our platform.",
+  keywords: [
+    "terms and conditions",
+    "guideline to using website",
+    "understand terms of service",
+  ],
+  openGraph: {
+    title: "Mortgage Fishing | Terms and conditions",
+    description:
+      "Understand the terms and guidelines for using our website. Review the terms of service governing your access and use of our platform.",
+    url: "https://mortgagefishing.com/terms-and-conditions",
+    type: "website",
+  },
 };
 
 export default function TandCsPage() {

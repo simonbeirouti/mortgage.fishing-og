@@ -4,6 +4,19 @@ export const metadata = {
   title: "Mortgage Fishing | Privacy policy",
   description:
     "Our commitment to safeguarding your privacy. Learn about our data protection practices and how we handle your personal information.",
+  keywords: [
+    "privacy policy",
+    "our commitment to your privacy",
+    "data protection practices",
+    "handle your personal information",
+  ],
+  openGraph: {
+    title: "Mortgage Fishing | Privacy policy",
+    description:
+      "Our commitment to safeguarding your privacy. Learn about our data protection practices and how we handle your personal information.",
+    url: "https://mortgagefishing.com/privacy-policy",
+    type: "website",
+  },
 };
 
 export default function PrivacyPage() {
